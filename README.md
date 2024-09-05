@@ -1,16 +1,22 @@
-# flutter_application_1
+# 🌐 Personal Portfolio Website
 
-A new Flutter project.
+Welcome to my **Personal Portfolio** website! This project showcases my skills, experience, and projects using **Flutter** and **Dart**. If you're looking to create a personalized portfolio like mine, feel free to clone the repository and customize it to fit your profile.
 
-## Getting Started
+🔗 **Live Demo**: [sripathiyadavportfolio.netlify.app](https://sripathiyadavportfolio.netlify.app/)
 
-This project is a starting point for a Flutter application.
+## 📋 Features
+- 🌟 **Responsive Design**: Adapts seamlessly to different screen sizes (desktop, tablet, mobile).
+- 💼 **Projects Section**: Display your key projects with descriptions and links.
+- 🛠️ **Skills Showcase**: Highlight your technical expertise with a dynamic skill bar.
+- 📝 **About Me**: A dedicated section to share your background and experiences.
+- 📞 **Contact Section**: Easy access for people to connect with you via email and social media links.
+- 🖼️ **Custom Animations**: Smooth transitions and animations for an interactive experience.
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Getting Started
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Prerequisites
+Before you begin, ensure you have the following installed on your local machine:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Flutter SDK**
+- **Dart SDK**
+- **Git**
