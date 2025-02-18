@@ -1,8 +1,6 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/utils/project_utils.dart';
-
 import '../Constants/colors.dart';
 import 'dart:js' as js;
 
@@ -36,11 +34,10 @@ class ProjectCardWidget extends StatelessWidget {
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 color: CustomColor.whitePrimary,
-                //fontSize: 14.0,
               ),
             ),
           ),
-          //subtitle
+          // Subtitle
           Padding(
             padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
             child: Text(
@@ -52,13 +49,10 @@ class ProjectCardWidget extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          //footer
+          // Footer (GitHub & Play Store Links)
           Container(
             color: CustomColor.bgkightl,
-            padding: const EdgeInsets.symmetric(
-              horizontal: 12,
-              vertical: 10,
-            ),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
             child: Row(
               children: [
                 const Text(
@@ -68,16 +62,28 @@ class ProjectCardWidget extends StatelessWidget {
                     fontSize: 10,
                   ),
                 ),
-                Spacer(),
+                const Spacer(),
                 if (project.githubLink != null)
                   InkWell(
-                      onTap: () {
-                        js.context.callMethod('open', [project.githubLink]);
-                      },
-                      child: Image.asset(
-                        'assets/GitHub.png',
-                        width: 19,
-                      )),
+                    onTap: () {
+                      js.context.callMethod('open', [project.githubLink]);
+                    },
+                    child: Image.asset(
+                      'assets/GitHub.png',
+                      width: 19,
+                    ),
+                  ),
+                const SizedBox(width: 8), // Spacing between icons
+                if (project.playstorelink != null)
+                  InkWell(
+                    onTap: () {
+                      js.context.callMethod('open', [project.playstorelink]);
+                    },
+                    child: Image.asset(
+                      'assets/playstore.png',
+                      width: 19,
+                    ),
+                  ),
               ],
             ),
           ),

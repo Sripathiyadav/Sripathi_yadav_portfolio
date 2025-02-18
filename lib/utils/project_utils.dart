@@ -3,12 +3,14 @@ class ProjectUtils {
   final String title;
   final String subtitle;
   final String? githubLink;
+  final String? playstorelink;
 
   ProjectUtils({
     required this.image,
     required this.title,
     required this.subtitle,
     this.githubLink,
+    this.playstorelink,
   });
 }
 
@@ -25,6 +27,8 @@ List<ProjectUtils> hobbyProjectUtils = [
   ProjectUtils(
     image: 'assets/projects/Splash screen.png',
     title: 'ToDo',
+    playstorelink:
+        "https://play.google.com/store/apps/details?id=com.sripathi.todo_app&pcampaignid=web_share",
     subtitle:
         'Just a Todo app can be used for remembering list of things that needs to be done',
     githubLink: 'https://github.com/Sripathiyadav/ToDo',
@@ -33,7 +37,7 @@ List<ProjectUtils> hobbyProjectUtils = [
     image: 'assets/projects/icon_flutter.png',
     title: 'CliMate',
     subtitle:
-        'Just a wheather app helps to find the current weather of a perticual location',
+        'Just a wheather app helps to find the current weather of a particular location',
     githubLink:
         'https://github.com/Sripathiyadav/climate/tree/main/climate_app',
   ),
